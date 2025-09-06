@@ -1,10 +1,14 @@
 const NeonButton = ({ children, className = "" }) => (
   <button
-    className={`relative rounded-2xl px-6 py-3 font-medium transition hover:scale-[1.1]  ${className}`}
+    className={`relative overflow-hidden rounded-2xl px-8 py-3 font-semibold tracking-wide text-fuchsia-200 shadow-[0_0_15px_fuchsia-200]
+      transition-all duration-300 ease-out hover:scale-105 hover:shadow-[0_0_25px_fuchsia-200] active:scale-95 ${className}`}
   >
-    <span className="relative z-10">{children}</span>
-    <span className="absolute inset-0 rounded-2xl bg-[#201a20] opacity-90" />
-    <span className="absolute inset-3 rounded-3xl blur-lg bg-gradient-to-r from-fuchsia-300 via-fuchsia-400 to-fuchsia-300 opacity-20" />
+    <span className="relative z-10 drop-shadow-[0_0_5px_fuchsia-200]">
+      {children}
+    </span>
+    <span className="absolute inset-0 rounded-2xl bg-gradient-to-r from-fuchsia-500 via-fuchsia-200 to-fuchsia-500 opacity-20 blur-xl" />
+    <span className="absolute inset-0 rounded-2xl border border-fuchsia-200/40 animate-pulse" />
   </button>
 );
+
 export default NeonButton;
