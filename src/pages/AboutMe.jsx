@@ -38,7 +38,7 @@ function AboutMe() {
     return () => clearTimeout(timeout);
   }, [subIndex, index, reverse, texts]);
   return (
-    <section className="relative">
+    <section className="relative " id="about">
       <Container className="grid items-center gap-10 py-16 md:grid-cols-2 md:py-24">
         <div>
           <h1 className="text-3xl font-extrabold leading-tight  text-white md:text-5xl">

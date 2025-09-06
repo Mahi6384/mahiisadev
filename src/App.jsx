@@ -5,6 +5,7 @@ import Experience from "./pages/Experience";
 import Projects from "./pages/Projects";
 import Skills from "./pages/Skills";
 import Contact from "./pages/Contact";
+import Footer from "./pages/Footer";
 
 function App() {
   return (
@@ -19,9 +20,7 @@ function App() {
       <Skills />
       <hr />
       <Contact />
-      <footer className="border-t border-white/5 py-6 text-center text-xs text-white/60">
-        © {new Date().getFullYear()} — Design and Developed by Mahi Jain.
-      </footer>
+      <Footer />
     </div>
   );
 }

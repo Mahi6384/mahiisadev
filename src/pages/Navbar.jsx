@@ -15,10 +15,10 @@ function Navbar() {
         <nav className="hidden md:flex items-center gap-8 text-sm text-white/75">
           {[
             ["About Me", "#about"],
-            ["Experience", "#skills"],
-            ["Projects", "#portfolio"],
+            ["Experience", "#experience"],
+            ["Projects", "#projects"],
             ["Skills", "#skills"],
-            ["More About Me", "#about"],
+            // ["More About Me", "#about"],
             ["Contact Me", "#contact"],
           ].map(([label, href]) => (
             <a key={label} href={href} className="hover:text-white">

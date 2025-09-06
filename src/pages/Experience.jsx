@@ -4,7 +4,7 @@ import SectionTitle from "../components/SectionTitle.jsx";
 
 function Experience() {
   return (
-    <section className="relative">
+    <section className="relative" id="experience">
       <Container className="py-14 md:py-20">
         {/* Section Header */}
         <SectionTitle kicker="EXPERIENCE" title="Where I've Worked" />
