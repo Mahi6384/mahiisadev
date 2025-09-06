@@ -28,7 +28,7 @@ const WorkCard = ({
 
       <div className="p-2">
         {/* Title */}
-        <h3 className="text-lg font-semibold tracking-wider text-fuchsia-300 font-sans pb-2">
+        <h3 className="text-lg font-semibold tracking-widest  text-fuchsia-200/80 font-sans pb-2">
           {title}
         </h3>
 
@@ -41,7 +41,7 @@ const WorkCard = ({
             {techStacks.split(",").map((tech, index) => (
               <span
                 key={index}
-                className="px-2 py-1 text-xs rounded-full bg-fuchsia-500/10 text-fuchsia-300 border border-fuchsia-500/20"
+                className="px-2 py-1 text-xs rounded-full bg-fuchsia-900/10 text-fuchsia-200/70 border border-fuchsia-200/20"
               >
                 {tech.trim()}
               </span>

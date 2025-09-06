@@ -41,28 +41,31 @@ function AboutMe() {
     <section className="relative">
       <Container className="grid items-center gap-10 py-16 md:grid-cols-2 md:py-24">
         <div>
-          <h1 className="text-4xl font-extrabold leading-tight text-white md:text-5xl">
+          <h1 className="text-3xl font-extrabold leading-tight  text-white md:text-5xl">
             <GradientText className=" transition-all duration-700 ease-out">
               {`${texts[index].substring(0, subIndex)}|`}
             </GradientText>
             <br />
             {/* <GradientText>DEVELOPER</GradientText> */}
           </h1>
-          <p className="mt-6 max-w-xl text-lg text-white/80">
-            I am Mahi —{" "}
-            <span className="underline decoration-sky-400/60">
-              web‑developer
-            </span>{" "}
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
-            labore explicabo blanditiis maxime, adipisci libero? Nisi, corrupti
-            harum eum maiores sit, molestiae pariatur, similique atque fugit ad
-            dolorum asperiores porro.{" "}
+          <p className="mt-6 max-w-xl not-md:text-md text-lg text-white/80">
+            Hi, I am Mahi — a passionate full-stack developer with a strong
+            foundation in front-end and back-end technologies. I specialize in
+            crafting dynamic, user-centric applications using modern stacks like
+            React, Next.js, Node.js, Express, and MongoDB, while constantly
+            exploring cutting-edge tools and frameworks. I thrive on building
+            intuitive UIs, scalable backends, and AI-powered solutions that
+            bring ideas to life. With an insatiable curiosity for emerging
+            technologies, I’m always experimenting, learning, and innovating to
+            stay ahead of trends. My goal is to deliver impactful digital
+            experiences that merge creativity, performance, and scalability,
+            while continuously leveling up as a developer.
           </p>
           <div className="mt-8">
             <NeonButton
               onClick={() =>
                 document
-                  .getElementById("portfolio")
+                  .getElementById("projects")
                   ?.scrollIntoView({ behavior: "smooth" })
               }
             >

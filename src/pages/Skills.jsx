@@ -60,7 +60,7 @@ function Skills() {
 
           {skillCategories.map((category, catIndex) => (
             <div key={catIndex} className="mb-12">
-              <h3 className="text-lg md:text-xl font-semibold text-fuchsia-300 mb-6">
+              <h3 className="text-lg md:text-xl font-semibold tracking-wider text-fuchsia-200/80 mb-6">
                 {category.title}
               </h3>
               <div className="mx-auto grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-8">
@@ -79,7 +79,7 @@ function Skills() {
                       alt={skill.name}
                       className="w-16 h-16 mb-3"
                     />
-                    <p className="text-sm md:text-base font-medium text-gray-200">
+                    <p className="text-sm md:text-base font-medium text-gray-200/80">
                       {skill.name}
                     </p>
                   </div>

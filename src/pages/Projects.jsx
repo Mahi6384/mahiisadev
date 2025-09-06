@@ -17,17 +17,17 @@ function Projects() {
 
       technologies: "React, Node.js, Express, MongoDB, Tailwind CSS",
       githubUrl: "https://github.com/Mahi6384/StreamZone",
-      liveLink: "https://github.com/Mahi6384/StreamZone",
+      // liveLink: "https://github.com/Mahi6384/StreamZone",
     },
     {
       img: jobPilotImage,
-      title: "JobPilot",
+      title: "JobPilot (still in progress)",
       description:
         "An AI-powered assistant that selects best-fit jobs, automates applications, crafts tailored answers, and helps you accelerates your professional success effortlessly.",
       technologies:
         "Playwright, Gen Ai, React, Node.js, Express, MongoDB, Tailwind CSS",
       githubUrl: " https://github.com/Mahi6384/JobPilot",
-      liveLink: "https://github.com/Mahi6384/JobPilot",
+      // liveLink: "https://github.com/Mahi6384/JobPilot",
     },
     {
       title: "Tweet-Generator",
@@ -36,7 +36,7 @@ function Projects() {
       img: tweetGeneratorImage,
       technologies: " Hugging Face API, React.js, CSS",
       githubUrl: "https://github.com/Mahi6384/tweetGenerator",
-      liveLink: "https://github.com/Mahi6384/tweetGenerator",
+      // liveLink: "https://github.com/Mahi6384/tweetGenerator",
     },
 
     // {
@@ -48,10 +48,10 @@ function Projects() {
   ];
   return (
     <div>
-      <section id="portfolio" className="py-14 md:py-20">
+      <section id="projects" className="py-14 md:py-20">
         <Container>
           <SectionTitle kicker="PORTFOLIO" title="Selected Projects" />
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-6 md:grid-cols-2 tracking-wide lg:grid-cols-3">
             {projects.map((project, i) => (
               <WorkCard
                 key={i}

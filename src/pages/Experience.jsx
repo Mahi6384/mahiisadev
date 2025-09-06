@@ -1,28 +1,30 @@
 import React from "react";
 import Container from "../components/Container.jsx";
-import GradientText from "../components/GradientText.jsx";
-// import SectionTitle from "../components/SectionTitle.jsx";
-// import Card from "../components/Card.jsx";
-// import Icon, { icons } from "../components/Icon.jsx";
+import SectionTitle from "../components/SectionTitle.jsx";
+
 function Experience() {
   return (
     <section className="relative">
-      <Container className="grid items-center gap-10 py-16 md:grid-cols-2 md:py-24">
-        <div>
-          <h1 className="text-4xl font-extrabold leading-tight text-white md:text-5xl">
-            <GradientText>Experience</GradientText>
-            {/* <br /> */}
-          </h1>
-          <br />
-          <h1 className="text-lg">
-            Front-End Developer Intern | You Ekko Communication{" "}
-          </h1>
-          <p className="text-md text-white/70">
-            {" "}
+      <Container className="py-14 md:py-20">
+        {/* Section Header */}
+        <SectionTitle kicker="EXPERIENCE" title="Where I've Worked" />
+
+        {/* Experience Card */}
+        <div className="mt-8">
+          <h2 className="text-xl font-semibold text-white">
+            Front-End Developer Intern
+            <span className="text-sm text-white/60 font-normal">
+              {" "}
+              | You Ekko Communication
+            </span>
+          </h2>
+          <p className="text-sm text-white/60 mt-1">
             Tech Stack: React.js, Next.js, SEO, Tailwind CSS, HTML
           </p>
         </div>
-        <div className="relative">
+
+        {/* Timeline */}
+        <div className="relative mt-10">
           <div className="absolute -inset-6 -z-10 rounded-full bg-gradient-to-tr from-fuchsia-500/10 via-sky-500/10 to-transparent blur-2xl" />
           <ul className="relative border-l border-gray-300 ml-6">
             <li className="mb-6 ml-6">
