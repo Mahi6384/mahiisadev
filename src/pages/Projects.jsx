@@ -3,7 +3,7 @@ import Card from "../components/Card";
 import Container from "../components/Container";
 import SectionTitle from "../components/SectionTitle";
 import WorkCard from "../components/WorkCard";
-import streamZoneImage from "../assets/streamzone.png";
+import streamZoneImage from "../assets/StreamZone.png";
 import jobPilotImage from "../assets/jobpilot2.png";
 import tweetGeneratorImage from "../assets/tweet.png";
 
