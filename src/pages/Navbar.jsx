@@ -12,7 +12,7 @@ function Navbar() {
           <GradientText>MAHI JAIN</GradientText>
         </div>
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center gap-8 text-sm text-white/75">
+        <nav className="hidden md:flex items-center gap-8 text-sm text-fuchsia-200/70">
           {[
             ["About Me", "#about"],
             ["Experience", "#experience"],

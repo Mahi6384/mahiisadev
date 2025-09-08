@@ -9,7 +9,7 @@ import Footer from "./pages/Footer";
 
 function App() {
   return (
-    <div className="min-h-screen bg-[#130f18] text-slate-300 selection:bg-pink-500/30">
+    <div className="min-h-screen bg-[#130f18] text-slate-300 selection:bg-pink-500/30 ">
       <Navbar />
       <AboutMe />
       <hr />

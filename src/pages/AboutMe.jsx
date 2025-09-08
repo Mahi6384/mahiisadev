@@ -63,15 +63,9 @@ function AboutMe() {
             while continuously leveling up as a developer.
           </p>
           <div className="mt-8">
-            <NeonButton
-              onClick={() =>
-                document
-                  .getElementById("projects")
-                  ?.scrollIntoView({ behavior: "smooth" })
-              }
-            >
-              VIEW MY WORK
-            </NeonButton>
+            <a href="#experience" className=" transition-all">
+              <NeonButton>KNOW MORE </NeonButton>
+            </a>
           </div>
         </div>
         <div className="relative">

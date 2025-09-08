@@ -76,13 +76,13 @@ function Contact() {
                 >
                   <FaLinkedin />
                 </a>
-                <a
+                {/* <a
                   href="https://twitter.com/YOUR_TWITTER_HANDLE"
                   target="_blank"
                   rel="noopener noreferrer"
-                >
-                  <FaTwitter />
-                </a>
+                > */}
+                {/* <FaTwitter />
+                </a> */}
               </div>
             </div>
           </div>
