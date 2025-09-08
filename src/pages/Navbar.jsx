@@ -21,7 +21,11 @@ function Navbar() {
             // ["More About Me", "#about"],
             ["Contact Me", "#contact"],
           ].map(([label, href]) => (
-            <a key={label} href={href} className="hover:text-white">
+            <a
+              key={label}
+              href={href}
+              className="hover:text-white scroll-smooth"
+            >
               {label}
             </a>
           ))}
@@ -60,10 +64,10 @@ function Navbar() {
             <ul className="flex flex-col items-center gap-4 py-4 text-sm text-white/75">
               {[
                 ["About Me", "#about"],
-                ["Experience", "#skills"],
-                ["Projects", "#portfolio"],
+                ["Experience", "#expeienece"],
+                ["Projects", "#projects"],
                 ["Skills", "#skills"],
-                ["More About Me", "#about"],
+                // ["More About Me", "#about"],
                 ["Contact Me", "#contact"],
               ].map(([label, href]) => (
                 <li key={label}>

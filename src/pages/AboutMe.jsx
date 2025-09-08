@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Container from "../components/Container.jsx";
 import GradientText from "../components/GradientText.jsx";
 import NeonButton from "../components/NeonButton.jsx";
+import Mahi from "../assets/mahi.jpg";
 
 function AboutMe() {
   const texts = [
@@ -76,7 +77,7 @@ function AboutMe() {
         <div className="relative">
           <div className="absolute -inset-6 -z-10 rounded-full bg-gradient-to-tr from-fuchsia-500/10 via-sky-500/10 to-transparent blur-2xl" />
           <img
-            src="https://images.unsplash.com/photo-1554151228-14d9def656e4?q=80&w=800&auto=format&fit=crop"
+            src={Mahi}
             alt="Portrait"
             className="mx-auto h-[460px] w-auto rounded-[28px] object-cover shadow-2xl md:h-[520px]"
           />
