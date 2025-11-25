@@ -9,8 +9,66 @@ function Experience() {
         {/* Section Header */}
         <SectionTitle kicker="EXPERIENCE" title="Where I've Worked" />
 
-        {/* Experience Card */}
+        {/* Experience Card - Full Stack Developer Intern */}
         <div className="mt-8">
+          <h2 className="text-xl font-semibold text-white">
+            Full Stack Developer Intern
+            <span className="text-sm text-white/60 font-normal">
+              {" "}
+              | Dharohar India
+            </span>
+          </h2>
+          <p className="text-sm text-white/60 mt-1">
+            October 2025 - Present
+          </p>
+          <p className="text-sm text-white/60 mt-1">
+            Tech Stack: Next.js, Typescript, Express.js, Javascript, Mongoose, Tailwind CSS, HTML
+          </p>
+        </div>
+
+        {/* Timeline - Full Stack Developer Intern */}
+        <div className="relative mt-10">
+          <div className="absolute -inset-6 -z-10 rounded-full bg-gradient-to-tr from-fuchsia-500/10 via-sky-500/10 to-transparent blur-2xl" />
+          <ul className="relative border-l border-gray-300 ml-6">
+            <li className="mb-6 ml-6">
+              <span className="absolute -left-3 flex h-6 w-6 items-center justify-center rounded-full text-white">
+                ●
+              </span>
+              Handling end-to-end development of the customer side platform.
+            </li>
+
+            <li className="mb-6 ml-6">
+              <span className="absolute -left-3 flex h-6 w-6 items-center justify-center rounded-full text-white">
+                ●
+              </span>
+              Developing a scalable, high-performance end-to-end web application using Next.js and Express.js.
+            </li>
+
+            <li className="mb-6 ml-6">
+              <span className="absolute -left-3 flex h-6 w-6 items-center justify-center rounded-full text-white">
+                ●
+              </span>
+              Building RESTful APIs and integrating MongoDB via Mongoose for efficient data management.
+            </li>
+
+            <li className="mb-6 ml-6">
+              <span className="absolute -left-3 flex h-6 w-6 items-center justify-center rounded-full text-white">
+                ●
+              </span>
+              Creating dynamic, responsive interfaces with NextJS, TypeScript and Tailwind CSS.
+            </li>
+
+            <li className="mb-6 ml-6">
+              <span className="absolute -left-3 flex h-6 w-6 items-center justify-center rounded-full text-white">
+                ●
+              </span>
+              Implementing authentication, form validation, and reusable UI components.
+            </li>
+          </ul>
+        </div>
+
+        {/* Experience Card - Front-End Developer Intern */}
+        <div className="mt-12">
           <h2 className="text-xl font-semibold text-white">
             Front-End Developer Intern
             <span className="text-sm text-white/60 font-normal">
@@ -23,7 +81,7 @@ function Experience() {
           </p>
         </div>
 
-        {/* Timeline */}
+        {/* Timeline - Front-End Developer Intern */}
         <div className="relative mt-10">
           <div className="absolute -inset-6 -z-10 rounded-full bg-gradient-to-tr from-fuchsia-500/10 via-sky-500/10 to-transparent blur-2xl" />
           <ul className="relative border-l border-gray-300 ml-6">
