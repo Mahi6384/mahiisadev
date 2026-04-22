@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import Container from "../components/Container.jsx";
 import GradientText from "../components/GradientText.jsx";
 import NeonButton from "../components/NeonButton.jsx";
-import Mahi from "../assets/mahiAboutMe.png";
+import ResumePDF from "../assets/Mahi_Jain_Full_Stack_Resume (4).pdf";
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
 function AboutMe() {
   const texts = [
@@ -58,26 +59,25 @@ function AboutMe() {
             and emerging tech, I'm constantly innovating to deliver impactful
             digital experiences that merge creativity with performance.
           </p>
-          <div className="mt-8">
+          <div className="mt-8 flex items-center gap-4">
             <a href="#experience" className=" transition-all">
               <NeonButton>KNOW MORE </NeonButton>
+            </a>
+            <a href={ResumePDF} download="Mahi_Jain_Full_Stack_Resume.pdf" className=" transition-all">
+              <NeonButton>DOWNLOAD RESUME</NeonButton>
             </a>
           </div>
         </div>
         <div className="relative flex items-center justify-center">
-          {/* Image with oval border */}
-          <div className="relative z-10">
-            <div className="absolute -inset-4 -z-10 rounded-full bg-gradient-to-tr from-fuchsia-500/20 via-pink-500/20 to-transparent blur-2xl" />
-            <div className="relative mx-auto h-[320px] w-[280px] md:h-[380px] md:w-[340px]">
-              {/* Oval border */}
-              <div className="absolute inset-0 rounded-[50%] border-4 border-fuchsia-400/50 shadow-lg shadow-fuchsia-500/20" />
-              <img
-                src={Mahi}
-                alt="Portrait"
-                className="h-full w-full rounded-[50%] object-cover"
-                style={{
-                  mixBlendMode: "normal",
-                }}
+          <div className="relative z-10 w-full max-w-[320px] md:max-w-[480px]">
+            {/* Ambient Glow behind Lottie */}
+            <div className="absolute inset-0 -z-10 rounded-full bg-gradient-to-tr from-fuchsia-500/30 via-pink-500/30 to-purple-500/30 blur-3xl" />
+            <div className="relative z-20 drop-shadow-[0_0_25px_rgba(236,72,153,0.2)]">
+              <DotLottieReact
+                src="https://assets9.lottiefiles.com/packages/lf20_w51pcehl.json"
+                loop
+                autoplay
+                className="w-full h-auto object-contain scale-110"
               />
             </div>
           </div>

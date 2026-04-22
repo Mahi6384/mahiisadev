@@ -2,7 +2,6 @@ import Card from "./Card";
 import Icon, { icons } from "./Icon";
 
 const WorkCard = ({
-  img,
   title,
   description,
   techStacks = "",
@@ -10,78 +9,65 @@ const WorkCard = ({
   liveLink,
 }) => {
   return (
-    <Card className="group relative overflow-hidden rounded-2xl shadow-md hover:shadow-lg transition p-0 bg-gray-900">
-      {/* Image */}
-      <div className="aspect-[16/10] w-full overflow-hidden">
-        {img ? (
-          <img
-            src={img}
-            alt={`${title} screenshot`}
-            className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-          />
-        ) : (
-          <div className="flex h-full items-center justify-center text-white/30">
-            Screenshot
-          </div>
-        )}
-      </div>
-
-      <div className="p-2">
+    <Card className="group relative overflow-hidden rounded-2xl shadow-md hover:shadow-lg transition p-6 bg-gray-900 flex flex-col h-full border border-gray-800">
+      <div className="flex-grow">
         {/* Title */}
-        <h3 className="text-lg font-semibold tracking-widest  text-fuchsia-200/80 font-sans pb-2">
+        <h3 className="text-xl font-semibold tracking-widest text-fuchsia-200/90 font-sans pb-4">
           {title}
         </h3>
 
         {/* Description */}
-        <p className="text-sm text-white/70 mb-3 line-clamp-5">{description}</p>
+        {Array.isArray(description) ? (
+          <ul className="text-sm text-white/70 mb-5 space-y-2 list-disc list-outside ml-4">
+            {description.map((point, index) => (
+              <li key={index} className="leading-relaxed text-justify">
+                {point}
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <p className="text-sm text-white/70 mb-5 leading-relaxed text-justify">
+            {description}
+          </p>
+        )}
 
         {/* Tech Stacks */}
         {techStacks && (
-          <div className="flex flex-wrap gap-2 mb-3">
+          <div className="flex flex-wrap gap-2 mb-6">
             {techStacks.split(",").map((tech, index) => (
               <span
                 key={index}
-                className="px-2 py-1 text-xs rounded-full bg-fuchsia-900/10 text-fuchsia-200/70 border border-fuchsia-200/20"
+                className="px-3 py-1 text-xs rounded-full bg-fuchsia-900/20 text-fuchsia-200/80 border border-fuchsia-200/20"
               >
                 {tech.trim()}
               </span>
             ))}
           </div>
         )}
+      </div>
 
-        {/* Links */}
-        <div className="flex gap-3 mt-2">
-          {githubUrl && (
-            <a
-              href={githubUrl}
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex items-center gap-1 text-sm text-white/70 hover:text-white"
-            >
-              <Icon path={icons.external} /> GitHub
-            </a>
-          )}
-          {liveLink && (
-            <a
-              href={liveLink}
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex items-center gap-1 text-sm text-white/70 hover:text-white"
-            >
-              <Icon path={icons.external} /> Live
-            </a>
-          )}
-          {/* {href && !liveLink && (
-            <a
-              href={href}
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex items-center gap-1 text-sm text-white/70 hover:text-white"
-            >
-              <Icon path={icons.external} /> Open
-            </a>
-          )} */}
-        </div>
+      {/* Links */}
+      <div className="flex gap-4 mt-auto pt-4 border-t border-gray-800">
+        {liveLink && (
+          <a
+            href={liveLink}
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center justify-center gap-2 px-4 py-2 text-sm font-medium text-white bg-fuchsia-600/80 hover:bg-fuchsia-600 rounded-lg transition-colors w-full sm:w-auto"
+          >
+            <Icon path={icons.external} /> Live
+          </a>
+        )}
+        {githubUrl && (
+          <a
+            href={githubUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center justify-center gap-2 px-4 py-2 text-sm font-medium text-white bg-gray-800 hover:bg-gray-700 rounded-lg transition-colors border border-gray-700 w-full sm:w-auto"
+          >
+            <Icon path={icons.external} /> GitHub
+          </a>
+        )}
       </div>
     </Card>
   );

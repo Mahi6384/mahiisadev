@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
 // --- SVG Components ---
 
@@ -340,11 +341,14 @@ console.log("Compiling...");
 def greet(name): print(f"Hello, {name}!")
 const promise = new Promise((resolve, reject) => { setTimeout(() => { resolve("Success!"); }, 1000); });
                     `}</pre>
-          <img
-            src="/Gemini_Generated_Image_uovpc9uovpc9uovp.jpg"
-            alt="Mahi, the coder"
-            className="girl-image"
-          />
+          <div className="girl-image flex items-end justify-center pointer-events-none">
+            <DotLottieReact
+              src="https://assets9.lottiefiles.com/packages/lf20_w51pcehl.json"
+              loop
+              autoplay
+              className="h-full w-full object-contain pb-10"
+            />
+          </div>
           <h1 className="main-title">&lt;MAHI IS A CODER&gt;</h1>
           {/* Code Snippets */}
           <div

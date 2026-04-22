@@ -1,51 +1,45 @@
 import React from "react";
-import Card from "../components/Card";
 import Container from "../components/Container";
 import SectionTitle from "../components/SectionTitle";
 import WorkCard from "../components/WorkCard";
-import streamZoneImage from "../assets/StreamZone.png";
-import jobPilotImage from "../assets/jobpilot2.png";
-import tweetGeneratorImage from "../assets/tweet.png";
 
 function Projects() {
   const projects = [
     {
-      title: "StreamZone",
-      description:
-        "StreamZone is an innovative full-stack platform that empowers users to effortlessly upload, stream, and enjoy videos with seamless, engaging experiences.",
-      img: streamZoneImage,
-
+      title: "JobPilot",
+      description: [
+        "Built an automated job application platform using Playwright, React.js, Node.js, and MongoDB to streamline multi-platform applications.",
+        "Developed a browser extension for one-click application submissions based on user-selected jobs.",
+        "Implemented automated workflows for form filling and job submissions using Playwright.",
+        "Maintained an updated job database with scheduled syncing for faster job discovery.",
+      ],
+      technologies: "Playwright, Gen AI, React, Node.js, Express, MongoDB",
+      githubUrl: "https://github.com/Mahi6384/JobPilot",
+      liveLink: "https://jobpilot-wheat.vercel.app/",
+    },
+    {
+      title: "InsightHire",
+      description: [
+        "Developed a community-driven interview preparation platform for sharing company-wise interview experiences.",
+        "Built role-based features for public sharing and private interview performance tracking.",
+        "Integrated Cloudinary and Multer for efficient image and video upload management.",
+        "Created feedback and discussion mechanisms to improve community engagement and content quality.",
+      ],
       technologies: "React, Node.js, Express, MongoDB, Tailwind CSS",
-      githubUrl: "https://github.com/Mahi6384/StreamZone",
-      // liveLink: "https://github.com/Mahi6384/StreamZone",
+      githubUrl: "https://github.com/Mahi6384/InsightHire",
+      liveLink: "https://insight-hire-ten.vercel.app/",
     },
     {
-      img: jobPilotImage,
-      title: "JobPilot (still in progress)",
-      description:
-        "An AI-powered assistant that selects best-fit jobs, automates applications, crafts tailored answers, and helps you accelerates your professional success effortlessly.",
-      technologies:
-        "Playwright, Gen Ai, React, Node.js, Express, MongoDB, Tailwind CSS",
-      githubUrl: " https://github.com/Mahi6384/JobPilot",
-      // liveLink: "https://github.com/Mahi6384/JobPilot",
-    },
-    {
-      title: "Tweet-Generator",
-      description:
-        "An AI assistant that creates diverse tweet versions on one theme, instantly shifting tone to match any emotion you choose",
-      img: tweetGeneratorImage,
-      technologies: " Hugging Face API, React.js, CSS",
+      title: "Tweet Generator",
+      description: [
+        "Built an AI-powered tweet generator using React.js and Hugging Face Inference API for context-aware content generation.",
+        "Developed a lightweight frontend-only architecture for real-time text generation without backend dependencies.",
+      ],
+      technologies: "Hugging Face API, React.js, CSS",
       githubUrl: "https://github.com/Mahi6384/tweetGenerator",
-      // liveLink: "https://github.com/Mahi6384/tweetGenerator",
     },
-
-    // {
-    //   title: "Book-Store",
-    //   description: "A streaming platform for movies and TV shows.",
-    //   imageUrl: "https://picsum.photos/seed/portfolio-1/800/500",
-    //   projectUrl: "https://github.com/Mahi6384/book-store",
-    // },
   ];
+
   return (
     <div>
       <section id="projects" className="py-14 md:py-20">
@@ -55,10 +49,8 @@ function Projects() {
             {projects.map((project, i) => (
               <WorkCard
                 key={i}
-                img={project.img}
                 title={project.title}
                 description={project.description}
-                href={project.projectUrl}
                 techStacks={project.technologies}
                 githubUrl={project.githubUrl}
                 liveLink={project.liveLink}
