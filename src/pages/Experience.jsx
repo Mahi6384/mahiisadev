@@ -9,24 +9,24 @@ function Experience() {
         {/* Section Header */}
         <SectionTitle kicker="EXPERIENCE" title="Where I've Worked" />
 
-        {/* Experience Card - Full Stack Developer Intern */}
+        {/* Experience Card - Full Stack Developer */}
         <div className="mt-8">
           <h2 className="text-xl font-semibold text-white">
-            Full Stack Developer Intern
+            Full Stack Developer
             <span className="text-sm text-white/60 font-normal">
               {" "}
-              | Dharohar India
+              | Qureal AI
             </span>
           </h2>
           <p className="text-sm text-white/60 mt-1">
-            October 2025 - Present
+            Feb 2025 - Present
           </p>
           <p className="text-sm text-white/60 mt-1">
-            Tech Stack: Next.js, Typescript, Express.js, Javascript, Mongoose, Tailwind CSS, HTML
+            Tech Stack: React.js, Next.js, TypeScript, Tailwind CSS
           </p>
         </div>
 
-        {/* Timeline - Full Stack Developer Intern */}
+        {/* Timeline - Full Stack Developer */}
         <div className="relative mt-10">
           <div className="absolute -inset-6 -z-10 rounded-full bg-gradient-to-tr from-fuchsia-500/10 via-sky-500/10 to-transparent blur-2xl" />
           <ul className="relative border-l border-gray-300 ml-6">
@@ -34,54 +34,71 @@ function Experience() {
               <span className="absolute -left-3 flex h-6 w-6 items-center justify-center rounded-full text-white">
                 ●
               </span>
-              Handling end-to-end development of the customer side platform.
+              Developed and deployed production-ready features using React.js, Next.js, TypeScript, and Tailwind CSS across frontend and backend systems.
             </li>
 
             <li className="mb-6 ml-6">
               <span className="absolute -left-3 flex h-6 w-6 items-center justify-center rounded-full text-white">
                 ●
               </span>
-              Developing a scalable, high-performance end-to-end web application using Next.js and Express.js.
+              Integrated Razorpay payment workflows for subscriptions and orders, increasing payment success rates by 15% and handling seamless checkouts for 500 users.
             </li>
 
             <li className="mb-6 ml-6">
               <span className="absolute -left-3 flex h-6 w-6 items-center justify-center rounded-full text-white">
                 ●
               </span>
-              Building RESTful APIs and integrating MongoDB via Mongoose for efficient data management.
+              Built an AI persona generator enabling users to customize attributes like gender, age, and appearance for dynamic image generation.
             </li>
 
             <li className="mb-6 ml-6">
               <span className="absolute -left-3 flex h-6 w-6 items-center justify-center rounded-full text-white">
                 ●
               </span>
-              Creating dynamic, responsive interfaces with NextJS, TypeScript and Tailwind CSS.
+              Implemented client-side image enhancement tools (brightness, cropping, etc.), reducing backend server load by 30% and decreasing user wait times by 2 seconds per image.
             </li>
 
             <li className="mb-6 ml-6">
               <span className="absolute -left-3 flex h-6 w-6 items-center justify-center rounded-full text-white">
                 ●
               </span>
-              Implementing authentication, form validation, and reusable UI components.
+              Designed a library of 15+ reusable UI components, accelerating frontend development cycles by an estimated 20% and improving platform consistency.
+            </li>
+
+            <li className="mb-6 ml-6">
+              <span className="absolute -left-3 flex h-6 w-6 items-center justify-center rounded-full text-white">
+                ●
+              </span>
+              Collaborated with backend APIs for dynamic data management and smooth feature delivery.
+            </li>
+
+            <li className="mb-6 ml-6">
+              <span className="absolute -left-3 flex h-6 w-6 items-center justify-center rounded-full text-white">
+                ●
+              </span>
+              Mentored 3 engineering interns through implementation support and code reviews to maintain code quality standards.
             </li>
           </ul>
         </div>
 
-        {/* Experience Card - Front-End Developer Intern */}
+        {/* Experience Card - Frontend Developer Intern */}
         <div className="mt-12">
           <h2 className="text-xl font-semibold text-white">
-            Front-End Developer Intern
+            Frontend Developer Intern
             <span className="text-sm text-white/60 font-normal">
               {" "}
-              | You Ekko Communication
+              | YouEkko Communication
             </span>
           </h2>
           <p className="text-sm text-white/60 mt-1">
-            Tech Stack: React.js, Next.js, SEO, Tailwind CSS, HTML
+            Apr 2023 - Jun 2023
+          </p>
+          <p className="text-sm text-white/60 mt-1">
+            Tech Stack: Next.js, Tailwind CSS
           </p>
         </div>
 
-        {/* Timeline - Front-End Developer Intern */}
+        {/* Timeline - Frontend Developer Intern */}
         <div className="relative mt-10">
           <div className="absolute -inset-6 -z-10 rounded-full bg-gradient-to-tr from-fuchsia-500/10 via-sky-500/10 to-transparent blur-2xl" />
           <ul className="relative border-l border-gray-300 ml-6">
@@ -89,40 +106,21 @@ function Experience() {
               <span className="absolute -left-3 flex h-6 w-6 items-center justify-center rounded-full text-white">
                 ●
               </span>
-              Built an interactive, data-driven dashboard to monitor user
-              traffic using pie, bar, donut, and line charts.
+              Built responsive and SEO-friendly web pages using Next.js and Tailwind CSS, achieving a Lighthouse performance score of 85+.
             </li>
 
             <li className="mb-6 ml-6">
               <span className="absolute -left-3 flex h-6 w-6 items-center justify-center rounded-full text-white">
                 ●
               </span>
-              Designed and deployed dynamic business card generation based on
-              user profiles.
+              Implemented secure authentication flows and form validations integrated with backend services.
             </li>
 
             <li className="mb-6 ml-6">
               <span className="absolute -left-3 flex h-6 w-6 items-center justify-center rounded-full text-white">
                 ●
               </span>
-              Implemented user authentication pages including Login and Forgot
-              Password.
-            </li>
-
-            <li className="mb-6 ml-6">
-              <span className="absolute -left-3 flex h-6 w-6 items-center justify-center rounded-full text-white">
-                ●
-              </span>
-              Developed core pages for Ekko.network (Return Policy, Terms &
-              Conditions, Privacy Policy, Contact Us, Landing Page).
-            </li>
-
-            <li className="mb-6 ml-6">
-              <span className="absolute -left-3 flex h-6 w-6 items-center justify-center rounded-full text-white">
-                ●
-              </span>
-              Optimized the website for search engines, significantly improving
-              visibility and reach.
+              Added export functionality for PDF, PNG, and SVG formats for user-generated assets.
             </li>
           </ul>
         </div>
